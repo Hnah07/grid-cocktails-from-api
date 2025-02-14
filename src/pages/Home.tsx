@@ -4,7 +4,7 @@ import useSWR from "swr";
 
 const Home = () => {
   const { data, isLoading, error } = useSWR<{ drinks: Drink[] }>(
-    "http://www.thecocktaildb.com/api/json/v1/1/random.php",
+    "https://www.thecocktaildb.com/api/json/v1/1/random.php",
     fetcher
   );
   return (

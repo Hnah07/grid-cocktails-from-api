@@ -6,7 +6,7 @@ import { Link } from "react-router";
 const Cocktails = () => {
   console.log("Rendering Cocktails component...");
   const { data, isLoading, error } = useSWR<{ drinks: Drink[] }>(
-    "http://www.thecocktaildb.com/api/json/v1/1/filter.php?i=lemon",
+    "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=lemon",
     fetcher
   );
   return (
