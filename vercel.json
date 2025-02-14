@@ -1,21 +1,3 @@
 {
-    "headers": [
-      {
-        "source": "/static/js/(.*).js",
-        "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/javascript"
-          }
-        ]
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html",
-        "has": [{ "type": "filesystem" }]
-      }
-    ]
+    "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
   }
-  
