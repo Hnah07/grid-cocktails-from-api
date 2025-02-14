@@ -1,7 +1,21 @@
 {
-    "routes": [
-      { "handle": "filesystem" },
-      { "source": "/(.*)", "destination": "/index.html" }
+    "headers": [
+      {
+        "source": "/static/js/(.*).js",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html",
+        "has": [{ "type": "filesystem" }]
+      }
     ]
   }
   
