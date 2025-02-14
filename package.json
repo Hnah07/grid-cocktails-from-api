@@ -5,7 +5,6 @@
   "type": "module",
   "homepage": "https://hnah07.github.io/grid-cocktails-from-api/",
   "scripts": {
-    "predeploy" : "npm run build",
     "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
